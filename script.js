@@ -11,7 +11,7 @@ function checkValidEmail() {
 
 button.addEventListener("click", () => {
     let isValid = checkValidEmail();
-    if (isValid) {
+    if (isValid && email.value.length!=0) {
         success.style.display = "flex";
         container.style.display = "none";
         if (success.style.display === "flex") {
